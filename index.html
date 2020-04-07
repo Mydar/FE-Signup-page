@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>PiggyVest | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div>
+            <div id="main-div">
+                <main>
+                    <div class="logo-div">
+                        <img src="https://dashboard.piggyvest.com/static/media/piggyvest-logo.0b78a8fa.svg" alt="PiggyVest Logo" class="piggyvest-logo">
+                    </div>
+                    <div class="form-body">
+                        <div class="heading">
+                            <h1>Create a Secure Account</h1>
+                            <p>Welcome to the future of Savings & Investments</p>
+                        </div>
+                        <form id="form">
+                            <div class="form-group">
+                                <label for="fullname">Full Name</label>
+                                <input type="text" class=" inputs form-control" id="fullname" placeholder="Full Name" name="fullname" required>
+                              </div>
+                              <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="inputs form-control" id="email" placeholder="Email Address" name="email" required>
+                              </div>
+                              <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="inputs form-control" id="phone-number" placeholder="Phone Number" name="phone" required>
+                              </div>
+                              <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="inputs form-control" id="password" placeholder="Password" name="password" required>
+                              </div>
+                              <div class="form-group">
+                                <label for="referral">Referrer Phone or Promo Code (Optional)</label>
+                                <input type="text" class="inputs form-control" id="referral" placeholder="Referrer Phone or Promo Code" name="referral" required>
+                              </div>
+                              <div class="form-group">
+                                <label for="selectrefrr">How Did You Hear About Us? (Optional)</label>
+                                <select class="form-control" id="selectrefrr" name = "selectrefrr" onfocus='this.size=4' onblur='this.size=1' onchange='this.size=1'>
+                                  <option selected default>Click To Select</option>
+                                  <option value="facebook">Facebook</option>
+                                  <option value="twitter">Twitter</option>
+                                  <option value="instagram">Instagram</option>
+                                  <option value="friend/family/coworker-referral">Friend/Family/Coworker Referral</option>
+                                  <option value="google-search">Google search</option>
+                                  <option value="google-playstore">Google playstore</option>
+                                  <option value="online-blog">Online Blog</option>
+                                  <option value="local-newspaper">Local Newspaper</option>
+                                  <option value="at-an-event">At an event</option>
+                                  <option value="other">Other</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <button type="Submit" class="form-control" id="submit-button">CREATE ACCOUNT</button>
+                              </div>
+                        </form>
+                    </div>
+                    <div id="login">
+                      <p id="login-text">
+                        Already have an account? Log In
+                      </p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
